@@ -1,0 +1,84 @@
+header {
+    .upper-header {
+        background-color: $main-color;
+        color: $main-text-color;
+        text-align: right;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 1px;
+        font-size: 0.8rem;
+        .container {
+            :first-child {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .bottom-header {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+
+            img {
+                height: 90px;
+            }
+
+            .main-menu {
+                flex-grow: 1;
+                padding: 0 40px;
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        list-style-type: none;
+                        margin: 5px;
+                        border-bottom: 6px solid transparent;
+
+                        a {
+                            font-weight: 700;
+                            font-size: 0.8rem;
+                            text-transform: uppercase;
+                        }
+
+                        &.active {
+                            color: $main-color;
+                            border-bottom: 6px solid $main-color;
+                        }
+                    }
+                }
+            }
+
+            .search-bar {
+                div {
+                    border-bottom: 2px solid $main-color;
+                    padding: 2px;
+                }
+
+                input {
+                    border: transparent;
+                    text-align: right;
+                    width: 140px;
+
+                    &::placeholder {
+                        color: black;
+                        font-weight: bold;
+                    }
+
+                    &::-ms-input-placeholder {
+                        color: black;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
