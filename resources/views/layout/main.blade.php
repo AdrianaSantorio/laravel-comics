@@ -14,6 +14,8 @@
     {{-- contenuto principale --}}
     <main>
         @yield('content')
+        {{-- FEATURED --}}
+        @include('includes.featured')
     </main>
     @include('includes.footer')
 </body>
