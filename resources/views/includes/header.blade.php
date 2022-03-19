@@ -9,7 +9,7 @@ $menus = config('main-menu')
     <div class="upper-header">
         <div class="container">
             <a href="#"> dc power &#8480; visa &reg;</a>
-            <a href="">additional dc sites</a>
+            <a href="#">additional dc sites</a>
             {{-- todo: aggiungere i --}}
         </div>
     </div>

@@ -13,7 +13,8 @@
     @include('includes.header')
     {{-- contenuto principale --}}
     <main>
-        @yield('content')
+        @include('includes.jumbotron')
+        @yield('content')    
         {{-- FEATURED --}}
         @include('includes.featured')
     </main>
