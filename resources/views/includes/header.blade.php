@@ -1,7 +1,7 @@
 {{-- PHP --}}
-<?php 
+@php 
 $menus = config('main-menu')
-?>
+@endphp
 
 {{-- HTML --}}
 <header>
@@ -28,7 +28,7 @@ $menus = config('main-menu')
                             <a href="{{route($link['route-name'])}}">{{$link['text']}} </a>
                         </li>
                     @endforeach
-                    {{-- TODO:aggiungere loop --}}
+                    {{-- TODO:aggiungere loop icona --}}
                 </ul>
             </nav>
             {{-- SEARCHBAR --}}

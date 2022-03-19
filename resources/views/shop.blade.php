@@ -1,5 +1,11 @@
 @extends('layout.main')
 
+@section('title',Route::currentRouteName())
+
 @section('content')
-    <h1></h1>
+    <div class="container">
+        <h1>
+            {{Route::currentRouteName()}}
+        </h1>
+    </div>
 @endsection

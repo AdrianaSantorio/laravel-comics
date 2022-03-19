@@ -1,0 +1,72 @@
+footer {
+    .upper-footer {
+        background-image: url("../images/footer-bg.jpg");
+        color: $secondary-text-color;
+        .container {
+            padding: 35px 0;
+        }
+
+        nav > ul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            height: 300px;
+            align-content: flex-start;
+
+            h3 {
+                color: white;
+                margin: 10px 0;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 5px 40px 5px 0;
+                a {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        p {
+            margin-top: 15px;
+            font-size: 0.8rem;
+            a {
+                color: $main-color;
+            }
+        }
+    }
+
+    .bottom-footer {
+        background-color: #303030;
+        height: 120px;
+        color: $main-color;
+        font-size: 1.5rem;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sign-up-button a {
+            border: 3px solid $main-color;
+            padding: 0.9rem;
+            color: $main-text-color;
+            font-size: 1.1rem;
+        }
+
+        .social {
+            font-size: 800;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                margin: 15px;
+            }
+            img {
+                margin: 5px;
+            }
+        }
+    }
+}
