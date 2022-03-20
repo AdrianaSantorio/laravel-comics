@@ -17,7 +17,9 @@
                     {{-- CARD --}}
                     <div class="card">
                         <figure>
+                            {{-- card figure --}}
                             <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                            {{-- card text --}}
                             <figcaption>{{$comic['series']}}</figcaption>
                         </figure>
                     </div>
@@ -33,5 +35,6 @@
         <button>load more</button>
     </div>
 </section>
-
+{{-- FEATURED --}}
+@include('includes.featured')
 @endsection

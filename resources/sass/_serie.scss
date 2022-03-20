@@ -1,0 +1,15 @@
+#show-serie {
+    .cover-display {
+        height: 80px;
+        background-color: $main-color;
+
+        .container-small {
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+}

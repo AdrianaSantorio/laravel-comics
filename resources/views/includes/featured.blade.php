@@ -9,7 +9,7 @@ $features = config('features');
         <ul class="h-100">
             @foreach ($features as $feature)
             <li class="h-100">
-                <a href="#"><img src="{{asset($feature['image'])}}" alt=""></a>
+                <a href="#"><img src="{{asset($feature['image'])}}" alt="{{$feature['text']}}"></a>
                 <a href="#">{{$feature['text']}}</a>
             </li>
             @endforeach

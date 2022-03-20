@@ -19,6 +19,11 @@ Route::get('/', function () {
     return view('home', compact('comics'));
 })->name('home');
 
+Route::get('/series/1', function () {
+
+    return view('serie');
+})->name('serie');
+
 
 Route::get('/characters', function () {
     return view('characters');

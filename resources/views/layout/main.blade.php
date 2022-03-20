@@ -15,8 +15,6 @@
     <main>
         @include('includes.jumbotron')
         @yield('content')    
-        {{-- FEATURED --}}
-        @include('includes.featured')
     </main>
     @include('includes.footer')
 </body>
