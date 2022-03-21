@@ -11,9 +11,9 @@
             <span>current series</span>
         </div>
         <ul> 
-            @forelse ($comics as $comic)
+            @forelse ($comics as $index=> $comic)
                 <li>
-                    <a href="#">
+                    <a href="{{ route("serie", ['id' => $index])}}">
                     {{-- CARD --}}
                     <div class="card">
                         <figure>

@@ -19,9 +19,16 @@ Route::get('/', function () {
     return view('home', compact('comics'));
 })->name('home');
 
-Route::get('/series/1', function () {
+Route::get('/series/{id}', function ($id) {
 
-    return view('serie');
+    $comics = config('comics');
+
+    if (!is_numeric($id) || $id < 0 || $id >= count($comics)) {
+        abort('404');
+    }
+    $serie = $comics[$id];
+
+    return view('serie', compact('serie'));
 })->name('serie');
 
 

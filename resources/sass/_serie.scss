@@ -12,4 +12,110 @@
             bottom: 20px;
         }
     }
+
+    .serie-display {
+        background-color: white;
+        padding: 80px 0;
+
+        .container-small {
+            display: flex;
+            flex-direction: row;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: #003f5e;
+            margin-bottom: 20px;
+        }
+
+        .serie-info {
+            flex-basis: 70%;
+            margin-right: 40px;
+        }
+
+        .purchase-information {
+            background-color: #55ba59;
+            height: 50px;
+            border-bottom: 1px solid #429246;
+            color: white;
+            display: flex;
+            align-items: center;
+
+            > * {
+                padding: 25px;
+            }
+
+            .price {
+                flex-grow: 1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-right: 1px solid #429246;
+            }
+        }
+
+        p {
+            margin: 20px 0;
+            color: #555556;
+            line-height: 1.5;
+        }
+
+        .advertisment {
+            figure {
+                text-align: right;
+            }
+
+            figcaption {
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #555556;
+            }
+        }
+    }
+
+    .serie-information {
+        background-color: #f6f6f6;
+        border-top: 1px solid #e5e5e5;
+        padding: 50px 0;
+        .container-small {
+            display: flex;
+            justify-content: space-between;
+            > * {
+                flex-basis: 48%;
+            }
+        }
+
+        h3,
+        h4 {
+            color: #003f5e;
+        }
+
+        h3 {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 20px;
+        }
+
+        .info {
+            display: flex;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 15px 0;
+            a {
+                color: #3dbce0;
+                font-weight: bold;
+                font-size: 0.8rem;
+            }
+
+            .specs a {
+                text-transform: uppercase;
+            }
+
+            h4 {
+                flex-basis: 25%;
+            }
+
+            div {
+                flex-basis: 75%;
+            }
+        }
+    }
 }

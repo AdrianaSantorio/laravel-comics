@@ -61,8 +61,8 @@ header .upper-header {
   padding: 1px;
   font-size: 0.8rem;
 }
-header .upper-header .container :first-child {
-  margin-right: 30px;
+header .upper-header .container > * {
+  margin-left: 30px;
 }
 header .bottom-header {
   background-color: white;
@@ -289,4 +289,91 @@ footer .bottom-footer .social img {
 #show-serie .cover-display img {
   position: absolute;
   bottom: 20px;
+}
+#show-serie .serie-display {
+  background-color: white;
+  padding: 80px 0;
+}
+#show-serie .serie-display .container-small {
+  display: flex;
+  flex-direction: row;
+}
+#show-serie .serie-display h2 {
+  text-transform: uppercase;
+  color: #003f5e;
+  margin-bottom: 20px;
+}
+#show-serie .serie-display .serie-info {
+  flex-basis: 70%;
+  margin-right: 40px;
+}
+#show-serie .serie-display .purchase-information {
+  background-color: #55ba59;
+  height: 50px;
+  border-bottom: 1px solid #429246;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#show-serie .serie-display .purchase-information > * {
+  padding: 25px;
+}
+#show-serie .serie-display .purchase-information .price {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 1px solid #429246;
+}
+#show-serie .serie-display p {
+  margin: 20px 0;
+  color: #555556;
+  line-height: 1.5;
+}
+#show-serie .serie-display .advertisment figure {
+  text-align: right;
+}
+#show-serie .serie-display .advertisment figcaption {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #555556;
+}
+#show-serie .serie-information {
+  background-color: #f6f6f6;
+  border-top: 1px solid #e5e5e5;
+  padding: 50px 0;
+}
+#show-serie .serie-information .container-small {
+  display: flex;
+  justify-content: space-between;
+}
+#show-serie .serie-information .container-small > * {
+  flex-basis: 48%;
+}
+#show-serie .serie-information h3,
+#show-serie .serie-information h4 {
+  color: #003f5e;
+}
+#show-serie .serie-information h3 {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+#show-serie .serie-information .info {
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px 0;
+}
+#show-serie .serie-information .info a {
+  color: #3dbce0;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+#show-serie .serie-information .info .specs a {
+  text-transform: uppercase;
+}
+#show-serie .serie-information .info h4 {
+  flex-basis: 25%;
+}
+#show-serie .serie-information .info div {
+  flex-basis: 75%;
 }

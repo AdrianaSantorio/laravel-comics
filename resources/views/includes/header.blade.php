@@ -9,8 +9,7 @@ $menus = config('main-menu')
     <div class="upper-header">
         <div class="container">
             <a href="#"> dc power &#8480; visa &reg;</a>
-            <a href="#">additional dc sites</a>
-            {{-- todo: aggiungere i --}}
+            <a href="#">additional dc sites <i class="fa-solid fa-caret-down"></i></a>
         </div>
     </div>
     {{-- BOTTOM HEADER --}}
@@ -25,7 +24,9 @@ $menus = config('main-menu')
                 <ul class="h-100">
                     @foreach ($menus as $link)
                         <li class="{{request()->routeIs($link['route-name']) ? 'active' : ''}}">
-                            <a href="{{route($link['route-name'])}}">{{$link['text']}} </a>
+                            <a href="{{route($link['route-name'])}}">{{$link['text']}} 
+                                @if($loop->last) <i class="fa-solid fa-caret-down"></i> @endif 
+                            </a>
                         </li>
                     @endforeach
                     {{-- TODO:aggiungere loop icona --}}
@@ -38,7 +39,7 @@ $menus = config('main-menu')
                     <input type="text" placeholder="Search" name="search">
                     <span>
                     {{-- TODO:inserire icona --}}
-                    O
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
                 </div>
             </div>
